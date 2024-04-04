@@ -46,7 +46,7 @@ df
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/03f8eed4-910f-4b36-952a-e42f04af61d2)
 
-# Ordinal Encoding 
+## Ordinal Encoding 
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
 pm=['Hot','Warm','Cold']
@@ -60,7 +60,7 @@ df
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/3c39cd75-cbc4-4be0-b6e1-77885f2157aa)
 
-# Label Encoder
+## Label Encoder
 ```
 le=LabelEncoder()
 dfc=df.copy()
@@ -69,7 +69,7 @@ dfc
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/d6b15fec-dc0f-4335-aa5e-b7d9c8456359)
 
-# OneHot Encoder
+## OneHot Encoder
 ```
 from sklearn.preprocessing import OneHotEncoder
 ohe=OneHotEncoder(sparse=False)
@@ -85,7 +85,7 @@ df2
 pd.get_dummies(df2,columns=["nom_0"])
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/f725312f-3f3f-4005-8cc9-64422fd3e140)
-# Binary Encoder
+## Binary Encoder
 ```
 from category_encoders import BinaryEncoder
 df=pd.read_csv("/content/data.csv")
@@ -99,7 +99,7 @@ dfb=pd.concat([df,nd],axis=1)
 dfb
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/48f270d4-9112-4ed1-a819-966fbc9e253c)
-# Target Encoder
+## Target Encoder
 ```
 from category_encoders import TargetEncoder
 te=TargetEncoder()
@@ -109,7 +109,7 @@ cc=pd.concat([cc,new],axis=1)
 cc
 ```
 ![image](https://github.com/23008859/EXNO-3-DS/assets/139117979/4f88289a-59ac-41b4-a069-362e4ef02f9c)
-# Data Transformation
+## Data Transformation
 ```
 import pandas as pd
 from scipy import stats
